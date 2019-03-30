@@ -1,8 +1,9 @@
 package Instruments.Brass;
 
 import Instruments.Instrument;
+import Interfaces.IPlay;
 
-public class Trumpet extends Instrument {
+public class Trumpet extends Instrument implements IPlay {
 
    private int numberOfValves;
 
@@ -13,5 +14,9 @@ public class Trumpet extends Instrument {
 
     public int getNumberOfValves() {
         return numberOfValves;
+    }
+
+    public String play() {
+        return getSound();
     }
 }

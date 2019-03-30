@@ -10,7 +10,6 @@ public abstract class Instrument {
     private String colour;
     private String sound;
 
-
     public Instrument(String section, String make, String model, String type, String material, String colour, String sound) {
         this.section = section;
         this.make = make;

@@ -31,11 +31,6 @@ public class PianoTest {
     }
 
     @Test
-    public void testSound() {
-        assertEquals("Beethoven", piano.getSound());
-    }
-
-    @Test
     public void testType() {
         assertEquals("Acoustic Grand", piano.getType());
     }
@@ -58,6 +53,11 @@ public class PianoTest {
     @Test
     public void testNumberOfPedals() {
         assertEquals(3, piano.getNumberOfPedals());
+    }
+
+    @Test
+    public void testIPlayInterface() {
+        assertEquals("Beethoven", piano.play());
     }
 
 }

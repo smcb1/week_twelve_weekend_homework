@@ -1,8 +1,9 @@
 package Instruments.Keys;
 
 import Instruments.Instrument;
+import Interfaces.IPlay;
 
-public class Piano extends Instrument {
+public class Piano extends Instrument implements IPlay {
 
     private int numberOfKeys;
     private int numberOfPedals;
@@ -21,4 +22,7 @@ public class Piano extends Instrument {
         return numberOfPedals;
     }
 
+    public String play() {
+        return getSound();
+    }
 }

@@ -47,13 +47,13 @@ public class TrumpetTest {
     }
 
     @Test
-    public void testSound() {
-        assertEquals("Miles Davies", trumpet.getSound());
+    public void testNumberOfValves() {
+        assertEquals(3, trumpet.getNumberOfValves());
     }
 
     @Test
-    public void testNumberOfValves() {
-        assertEquals(3, trumpet.getNumberOfValves());
+    public void testIPlayInterface() {
+        assertEquals("Miles Davies", trumpet.play());
     }
 
 }

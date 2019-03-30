@@ -31,11 +31,6 @@ public class GuitarTest {
     }
 
     @Test
-    public void testSound() {
-        assertEquals("Chuck Berry", guitar.getSound());
-    }
-
-    @Test
     public void testType() {
         assertEquals("Electric", guitar.getType());
     }
@@ -53,6 +48,11 @@ public class GuitarTest {
     @Test
     public void testNumberOfStrings() {
         assertEquals(6, guitar.getNumberOfStrings());
+    }
+
+    @Test
+    public void testIPlayInterface() {
+        assertEquals("Chuck Berry", guitar.play());
     }
 }
 
