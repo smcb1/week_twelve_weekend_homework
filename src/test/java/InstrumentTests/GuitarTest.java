@@ -12,7 +12,7 @@ public class GuitarTest {
 
     @Before
     public void setUp() {
-        guitar = new Guitar("Stringed", "Gibson", "Epiphone", "Chuck Berry", "Electric", "Wood", "Sunburst Orange", 6);
+        guitar = new Guitar("Stringed", "Gibson", "Epiphone", "Chuck Berry", "Electric", "Wood", "Sunburst Orange", 6, 199.99, 299.99);
     }
 
     @Test
@@ -48,6 +48,16 @@ public class GuitarTest {
     @Test
     public void testNumberOfStrings() {
         assertEquals(6, guitar.getNumberOfStrings());
+    }
+
+    @Test
+    public void testPurchasePrice() {
+        assertEquals(199.99, guitar.getPurchasePrice(), 0);
+    }
+
+    @Test
+    public void testSellPrice() {
+        assertEquals(299.99, guitar.getSalePrice(), 0);
     }
 
     @Test

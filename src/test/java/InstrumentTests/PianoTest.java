@@ -12,7 +12,7 @@ public class PianoTest {
 
     @Before
     public void setUp() {
-        piano = new Piano("Keys", "Steinway", "1942", "Beethoven", "Acoustic Grand", "Wood", "Black", 88, 3);
+        piano = new Piano("Keys", "Steinway", "1942", "Beethoven", "Acoustic Grand", "Wood", "Black", 88, 3, 29999.99, 39999.99);
     }
 
     @Test
@@ -53,6 +53,16 @@ public class PianoTest {
     @Test
     public void testNumberOfPedals() {
         assertEquals(3, piano.getNumberOfPedals());
+    }
+
+    @Test
+    public void testPurchasePrice() {
+        assertEquals(29999.99, piano.getPurchasePrice(), 0);
+    }
+
+    @Test
+    public void testSellPrice() {
+        assertEquals(39999.99, piano.getSalePrice(), 0);
     }
 
     @Test

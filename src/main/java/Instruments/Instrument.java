@@ -9,8 +9,9 @@ public abstract class Instrument {
     private String material;
     private String colour;
     private String sound;
+    private double purchasePrice, salePrice;
 
-    public Instrument(String section, String make, String model, String type, String material, String colour, String sound) {
+    public Instrument(String section, String make, String model, String type, String material, String colour, String sound, double purchasePrice, double salePrice) {
         this.section = section;
         this.make = make;
         this.model = model;
@@ -18,6 +19,8 @@ public abstract class Instrument {
         this.material = material;
         this.colour = colour;
         this.sound = sound;
+        this.purchasePrice = purchasePrice;
+        this.salePrice = salePrice;
     }
 
     public String getSection() {
@@ -42,6 +45,14 @@ public abstract class Instrument {
 
     public String getColour() {
         return colour;
+    }
+
+    public double getPurchasePrice() {
+        return purchasePrice;
+    }
+
+    public double getSalePrice() {
+        return salePrice;
     }
 
     public String getSound() {
