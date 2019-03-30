@@ -1,6 +1,6 @@
 package InstrumentTests;
 
-import Instruments.Piano;
+import Instruments.Keys.Piano;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,7 +12,7 @@ public class PianoTest {
 
     @Before
     public void setUp() {
-        piano = new Piano( "Keys", "Steinway", "1942", "Beethoven", "Acoustic Grand", "Wood", "Black", 88, 3);
+        piano = new Piano("Keys", "Steinway", "1942", "Beethoven", "Acoustic Grand", "Wood", "Black", 88, 3);
     }
 
     @Test

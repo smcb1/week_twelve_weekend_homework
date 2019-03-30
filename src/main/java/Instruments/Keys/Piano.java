@@ -1,4 +1,6 @@
-package Instruments;
+package Instruments.Keys;
+
+import Instruments.Instrument;
 
 public class Piano extends Instrument {
 

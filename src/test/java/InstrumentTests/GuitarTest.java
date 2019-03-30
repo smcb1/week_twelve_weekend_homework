@@ -1,6 +1,6 @@
 package InstrumentTests;
 
-import Instruments.Guitar;
+import Instruments.Stringed.Guitar;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,12 +12,12 @@ public class GuitarTest {
 
     @Before
     public void setUp() {
-        guitar = new Guitar("Guit/Bass", "Gibson", "Epiphone", "Chuck Berry", "Electric", "Wood", "Sunburst Orange", 6);
+        guitar = new Guitar("Stringed", "Gibson", "Epiphone", "Chuck Berry", "Electric", "Wood", "Sunburst Orange", 6);
     }
 
     @Test
     public void testSection() {
-        assertEquals("Guit/Bass", guitar.getSection());
+        assertEquals("Stringed", guitar.getSection());
     }
 
     @Test

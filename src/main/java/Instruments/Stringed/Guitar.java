@@ -1,4 +1,6 @@
-package Instruments;
+package Instruments.Stringed;
+
+import Instruments.Instrument;
 
 public class Guitar extends Instrument {
 
