@@ -1,4 +1,4 @@
-package Interfaces;
+package Items.Interfaces;
 
 public interface IPlay {
 

@@ -1,15 +1,15 @@
-package Instruments.Keys;
+package Items.Instruments.Keys;
 
-import Instruments.Instrument;
-import Interfaces.IPlay;
+import Items.Instruments.Instrument;
+import Items.Interfaces.IPlay;
 
 public class Piano extends Instrument implements IPlay {
 
     private int numberOfKeys;
     private int numberOfPedals;
 
-    public Piano(String section, String make, String model, String sound, String type, String material, String colour, int numberOfKeys, int numberOfPedals, double purchasePrice, double salePrice) {
-        super(section, make, model, type, material, colour, sound, purchasePrice, salePrice);
+    public Piano(String make, String model, double purchasePrice, double sellPrice, String section, String type, String material, String colour, String sound, int numberOfKeys, int numberOfPedals) {
+        super(make, model, purchasePrice, sellPrice, section, type, material, colour, sound);
         this.numberOfKeys = numberOfKeys;
         this.numberOfPedals = numberOfPedals;
     }

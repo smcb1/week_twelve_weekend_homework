@@ -1,6 +1,6 @@
 package InstrumentTests;
 
-import Instruments.Brass.Trumpet;
+import Items.Instruments.Brass.Trumpet;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,7 +12,7 @@ public class TrumpetTest {
 
     @Before
     public void setUp() {
-        trumpet = new Trumpet("Brass", "Windsor", "Student Bb", "Miles Davies", "Acoustic", "Brass", "Gold", 3, 99.99, 199.99);
+        trumpet = new Trumpet("Windsor", "Student Bb", 59.99, 69.99, "Brass", "Acoustic", "Brass", "Gold", "Miles Davies", 3);
     }
 
     @Test
@@ -35,7 +35,6 @@ public class TrumpetTest {
         assertEquals("Acoustic", trumpet.getType());
     }
 
-
     @Test
     public void testMaterial() {
         assertEquals("Brass", trumpet.getMaterial());
@@ -53,12 +52,12 @@ public class TrumpetTest {
 
     @Test
     public void testPurchasePrice() {
-        assertEquals(99.99, trumpet.getPurchasePrice(), 0);
+        assertEquals(59.99, trumpet.getPurchasePrice(), 0);
     }
 
     @Test
     public void testSellPrice() {
-        assertEquals(199.99, trumpet.getSalePrice(), 0);
+        assertEquals(69.99, trumpet.getSellPrice(), 0);
     }
 
     @Test

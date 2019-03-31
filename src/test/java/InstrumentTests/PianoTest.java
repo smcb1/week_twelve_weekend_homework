@@ -1,6 +1,6 @@
 package InstrumentTests;
 
-import Instruments.Keys.Piano;
+import Items.Instruments.Keys.Piano;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,7 +12,7 @@ public class PianoTest {
 
     @Before
     public void setUp() {
-        piano = new Piano("Keys", "Steinway", "1942", "Beethoven", "Acoustic Grand", "Wood", "Black", 88, 3, 29999.99, 39999.99);
+        piano = new Piano("Steinway", "1942", 39999.99, 49999.99, "Keys", "Acoustic", "Wood", "Black", "Beethoven", 88, 3);
     }
 
     @Test
@@ -32,7 +32,7 @@ public class PianoTest {
 
     @Test
     public void testType() {
-        assertEquals("Acoustic Grand", piano.getType());
+        assertEquals("Acoustic", piano.getType());
     }
 
     @Test
@@ -57,12 +57,12 @@ public class PianoTest {
 
     @Test
     public void testPurchasePrice() {
-        assertEquals(29999.99, piano.getPurchasePrice(), 0);
+        assertEquals(39999.99, piano.getPurchasePrice(), 0);
     }
 
     @Test
     public void testSellPrice() {
-        assertEquals(39999.99, piano.getSalePrice(), 0);
+        assertEquals(49999.99, piano.getSellPrice(), 0);
     }
 
     @Test
